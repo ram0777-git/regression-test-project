@@ -965,7 +965,7 @@ class Agent:
         return stems
 
     def deterministic_round(self):
-        stems = self.deterministic("det", 0, self.seed, 40, self.per_label(), self.scope_names)
+        stems = self.deterministic("det", 0, self.seed, 80, self.per_label(), self.scope_names)
         if not stems:
             self.note("deterministic", report="no cases generated")
             return
